@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal</title>
+    <style>
+      html, body {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      #paypal-button-container {
+          width: 350px; /* Adjust the width as needed */
+          height: 180px; /* Adjust the height as needed */
+          /* Add any additional styling for the container here */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="paypal-button-container"></div>
+    <p id="result-message"></p>
+    <!-- Replace the "test" client-id value with your client-id -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AUnFvNQ2rV8CVXaaktwULcVrBB-f7huExOsqmlOYFCxpogGfyCVLON1nXZZ1lpVW_ho-r9tEkL4SZlSm&components=buttons&enable-funding=venmo,paylater" data-sdk-integration-source="integrationbuilder_sc"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
